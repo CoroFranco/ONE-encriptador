@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img width="250" height="100" src="aluraoracle.png" alt="Logo Imagen">
+        <h1>Encriptador / Desencriptador</h1>
+    </header>
+
+    <main class="main">
+        <div class="area">
+            <textarea name="" id="textNormal" placeholder="inserte el texto que desea encriptar"></textarea>
+            <div class="buttons">
+                <button onclick="encriptar()" class="btnEncrip">Encriptar</button>
+                <button onclick="copiar2()" id="btnGuardar1" class="btnCopiar" hidden>Copiar</button>
+            </div>
+
+        </div>
+        <div class="area">
+            <textarea  name="" id="textEnc" placeholder="inserte el texto que desea desencriptar"></textarea>
+            <div class="buttons">
+                <button onclick="desencriptar()" class="btnDes">Desencriptar</button>
+                <button onclick="copiar()" id="btnGuardar2" class="btnCopiar" hidden>Copiar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js" ></script>
+</body>
+
+</html>
