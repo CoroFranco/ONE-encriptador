@@ -9,12 +9,20 @@ body {
     animation: 4s linear 0s infinite bp;
     font-family: "Bona Nova SC", serif;
 
-  }
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .main {
@@ -29,6 +37,7 @@ body {
     gap: 10px;
     margin-right: 40px;
     margin-top: 20px;
+    width: 100%;   
 }
 
 
@@ -37,9 +46,9 @@ body {
     justify-content: space-around;
 }
 
-textarea{
-    height:500px;
-    width: 400px;
+textarea {
+    height: 500px;
+    width: 100%;
     color: black;
     font-size: 25px;
     padding: 10px;
@@ -57,11 +66,12 @@ textarea::placeholder {
     font-weight: bold;
     padding: 10px;
     border: solid 1px rgba(101, 101, 212, 0.363);
-    background-color:rgba(109, 182, 201, 0.527) ;
+    background-color: rgba(109, 182, 201, 0.527);
     border-radius: 5px;
     color: rgb(1, 27, 75);
+
     &:hover {
-        background-color:rgba(61, 189, 221, 0.527) ;
+        background-color: rgba(61, 189, 221, 0.527);
         cursor: pointer;
     }
 }
@@ -71,11 +81,12 @@ textarea::placeholder {
     font-weight: bold;
     padding: 10px;
     border: solid 1px rgba(101, 101, 212, 0.363);
-    background-color:rgba(201, 109, 109, 0.527) ;
+    background-color: rgba(201, 109, 109, 0.527);
     border-radius: 5px;
     color: rgb(1, 27, 75);
+
     &:hover {
-        background-color:rgba(221, 61, 61, 0.527) ;
+        background-color: rgba(221, 61, 61, 0.527);
         cursor: pointer;
     }
 }
@@ -85,11 +96,40 @@ textarea::placeholder {
     font-weight: bold;
     padding: 10px;
     border: solid 1px rgba(101, 101, 212, 0.363);
-    background-color:rgba(109, 201, 114, 0.527) ;
+    background-color: rgba(109, 201, 114, 0.527);
     border-radius: 5px;
     color: rgb(1, 27, 75);
+
     &:hover {
-        background-color:rgba(61, 221, 74, 0.527) ;
+        background-color: rgba(61, 221, 74, 0.527);
         cursor: pointer;
     }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        
+    }
+    textarea {
+        height: 200px;
+        font-size: 15px;
+    }
+
+    .area {
+        width: 70%;
+    }
+    .buttons {
+        flex-direction: column;
+        font-size: 15px;
+        margin: 0 auto;
+        gap: 5px;
+    }
+
+    
 }
